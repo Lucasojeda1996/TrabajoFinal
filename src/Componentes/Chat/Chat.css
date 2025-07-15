@@ -1,0 +1,53 @@
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #e5ddd5; /* fondo típico de WhatsApp */
+  height: calc(100vh - 130px); /* ajustable según header y footer */
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  gap: 8px;
+  box-sizing: border-box;
+}
+
+/* Scroll moderno */
+.chat-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+  background-color: #c0c0c0;
+  border-radius: 4px;
+}
+
+.chat-container::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Mensaje vacío centrado */
+.empaty-chat {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #777;
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* Ajuste general para que los mensajes no se peguen a los bordes */
+.chat-message {
+  margin-bottom: 6px;
+}
+
+/* Para pantallas pequeñas (responsive) */
+@media (max-width: 600px) {
+  .chat-container {
+    padding: 10px;
+  }
+
+  .chat-message {
+    font-size: 13px;
+    max-width: 85%;
+  }
+}

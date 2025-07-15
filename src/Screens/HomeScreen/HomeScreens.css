@@ -1,0 +1,74 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #e5ddd5; /* fondo tipo WhatsApp */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.Header-Chat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #075e54;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
+}
+
+
+
+
+.link-Volver,
+.link-detalle {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+  .link-Volver:hover,
+.link-detalle:hover {
+  text-decoration: underline;
+}
+
+
+
+.link-Volver{
+  color: white;
+ 
+  padding: 8px 16px;
+  font-weight: bold;
+  
+  border-bottom: 2px solid #128c7e;
+}
+
+.chat-container {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.message-form {
+  display: flex;
+  justify-content: end;
+  padding: 12px;
+  background-color: #f7f7f7;
+  border-top: 1px solid #ccc;
+}

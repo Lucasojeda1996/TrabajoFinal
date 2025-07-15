@@ -1,0 +1,26 @@
+.contact-screen {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f0f2f5;
+  font-family: sans-serif;
+}
+
+.contact-header {
+  background-color: #075e54;
+  color: white;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-title {
+  margin: 0;
+}
+
+.contact-list-container {
+  flex-grow: 1;
+  overflow-y: auto;
+  background-color: white;
+}
