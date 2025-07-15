@@ -1,0 +1,95 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 24px auto;
+}
+
+.btn-back {
+    align-self: flex-start;
+    margin-bottom: 16px;
+    background: none;
+    color: #3b82f6;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.btn-back:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+.contact-avatar {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+
+.contact-name {
+    margin-top: 16px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+
+.contact-status {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #666;
+}
+
+.contact-actions {
+    margin-top: 24px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-message {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.btn-message:hover {
+    background-color: #2563eb;
+}
+
+.btn-call {
+    background-color: #22c55e;
+    color: white;
+}
+
+.btn-call:hover {
+    background-color: #16a34a;
+}
+
+.btn-block {
+    background-color: #fee2e2;
+    color: #b91c1c;
+}
+
+.btn-block:hover {
+    background-color: #fecaca;
+}
