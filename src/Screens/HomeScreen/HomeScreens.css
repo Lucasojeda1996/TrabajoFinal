@@ -53,6 +53,7 @@
 
 
 
+
 .link-Volver,
 .link-detalle {
   color: white;
@@ -61,7 +62,7 @@
 }
   .link-Volver:hover,
 .link-detalle:hover {
-  text-decoration: underline;
+  text-decoration:#128c7e;
 }
 
 
