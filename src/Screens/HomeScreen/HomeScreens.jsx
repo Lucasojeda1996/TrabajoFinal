@@ -6,7 +6,7 @@ import { MessagesContext } from '../../Context/MessagesContext'
 import { useEffect } from 'react'
 import LoaderSpinner from '../../Componentes/LoaderSpinner/LoaderSpinner'
 import './HomeScreens.css'
-import ChatHeader from '../../ChatHeader/ChatHeader'
+
 import { ContactDetailContext } from '../../Context/ContactDetailContext'
 
 
@@ -24,11 +24,9 @@ export default function HomeScreens() {
     <div className="home-container">
       <header className='Header-Chat'>
     <Link to="/contacts" className="link-Volver">← Volver</Link>
-    <span>Contacto:<ChatHeader></ChatHeader></span>
-    
+    <span>Contacto: <ChatHeader/></span>
     <Link to={`/contacts/${contact_id}/detail`} className="link-detalle">Informacion</Link>
-
-     </header>
+      </header>
 
       <div className="chat-container">
         <Chat />
@@ -41,3 +39,26 @@ export default function HomeScreens() {
 }
 
 
+
+const ChatHeader = () => {
+  const { contact_detail } = useContext(ContactDetailContext);
+
+  if (!contact_detail) {
+    return (
+      <div className="chat-header">
+        <h2>Selecciona un chat</h2>
+      </div>
+    );
+  }
+
+  return (
+    <div className="chat-header">
+      <h2>{contact_detail.name}</h2>
+      <img
+        src={contact_detail.img}
+        alt={`Foto de ${contact_detail.name}`}
+        className="chat-header-img"
+      />
+    </div>
+  );
+};

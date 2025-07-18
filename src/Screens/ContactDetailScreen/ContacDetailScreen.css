@@ -9,6 +9,7 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     margin: 24px auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .btn-back {
@@ -28,8 +29,8 @@
 }
 
 .contact-avatar {
-    width: 128px;
-    height: 128px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     object-fit: cover;
     border: 1px solid #ccc;
@@ -38,10 +39,10 @@
 
 
 .contact-name {
-    margin-top: 16px;
+    margin-top: 50px;
     font-size: 24px;
-    font-weight: 600;
-    color: #333;
+    
+    color: #000000;
 }
 
 .contact-status {
