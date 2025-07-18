@@ -26,7 +26,7 @@ export default function HomeScreens() {
     <Link to="/contacts" className="link-Volver">← Volver</Link>
     
     <Link to={`/contacts/${contact_id}/detail`} className="link-detalle">
-      <ChatHeader></ChatHeader> 
+    detalle
      </Link>
 
    
