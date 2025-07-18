@@ -6,7 +6,7 @@ import { MessagesContext } from '../../Context/MessagesContext'
 import { useEffect } from 'react'
 import LoaderSpinner from '../../Componentes/LoaderSpinner/LoaderSpinner'
 import './HomeScreens.css'
-import ChatHeader from '../../ChatHeader/ChatHeader'
+import { ChatHeader} from '../../ChatHeader/ChatHeader'
 import { ContactDetailContext } from '../../Context/ContactDetailContext'
 
 
@@ -24,10 +24,11 @@ export default function HomeScreens() {
     <div className="home-container">
       <header className='Header-Chat'>
     <Link to="/contacts" className="link-Volver">← Volver</Link>
-    
+    <span>Contacto:</span>
+    <ChatHeader></ChatHeader>
     <Link to={`/contacts/${contact_id}/detail`} className="link-detalle">
-    detalle
-     </Link>
+    detalle :
+   </Link>
 
    
 
