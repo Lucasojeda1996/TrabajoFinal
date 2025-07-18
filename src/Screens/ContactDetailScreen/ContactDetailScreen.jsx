@@ -21,7 +21,11 @@ export default function ContactDetailScreen() {
     }
     return (
         <div className="contact-container">
-          
+          <header>
+            
+          </header>
+            
+
            <Link to={`/contacts/${contact_id}/messages`}
              className="btn-back">
                 ← Volver

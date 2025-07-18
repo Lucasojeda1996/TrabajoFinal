@@ -24,8 +24,10 @@ export default function HomeScreens() {
     <div className="home-container">
       <header className='Header-Chat'>
     <Link to="/contacts" className="link-Volver">← Volver</Link>
-    <span>Contacto </span>
-    <Link to={`/contacts/${contact_id}/detail`} className="link-detalle"> Detalle</Link>
+    
+    <Link to={`/contacts/${contact_id}/detail`} className="link-detalle">
+      <ChatHeader></ChatHeader> 
+     </Link>
 
    
 
